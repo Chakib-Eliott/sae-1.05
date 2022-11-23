@@ -1,18 +1,70 @@
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
 header {
     display: flex;
 	background-color: #DFDFDF;
 	align-items: center;
 }
 
-header > img {
-    max-height: 7em;
-    margin: 1em;
+/* sticky footer */
+
+html, body {
+    height: 100%;
+    margin-top: auto
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+    
+}
+  
+.footer {
+    flex-shrink: 0;
+}
+
+/* end sticky footer */
+
+
+/* responsive */
+header >img {
+    width: 10%;
+    object-fit: cover;
+    object-position: bottom;
+    margin: 1em;
+    max-height: auto;
+}
+
+header > h1 {
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 600px) {
+    header > h1 {
+        font-size: 100%;
+    }
+    header >img {
+        width: 20%;
+    }
+}
+
+header {
+    white-space: normal;
+}
+/* end responsive */
 
 footer {
     display: flex;
 	background-color: #DFDFDF;
 	justify-content: space-between;
+    padding: 5px;
 }
 
 footer > p > a {
@@ -38,13 +90,36 @@ nav > ul > li:hover, nav > ul > li:hover > a {
 }
 
 nav > ul > li {
-	background-color: #DFDFDF;
+	background-color: #ececec;
 	padding: 0.5em;
     border-radius: 0.5em;
     list-style: none;
+    margin: 2px;
+    white-space: nowrap;
 }
 
 nav > ul {
     display: flex;
 	justify-content: space-around;
 }
+/* nav responsive */
+nav {
+    position: absolute;
+    right: 0;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    margin: 20px;
+}
+@media screen and (max-width: 850px) {
+    nav {
+        padding-top: 10%;
+        font-size: 85%;
+        margin-right: 5px;
+    }
+    main > h1 {
+        margin-top: 30px;
+    }
+}
+
+/* end nav responsive */
