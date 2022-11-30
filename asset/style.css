@@ -25,10 +25,52 @@ main > aside {
     width: 25%;
 }
 
+/*Tableau calendrier*/
+main > article > table {
+    border-collapse: collapse;
+}
+
+
+td, th{
+    border: solid 1px black;
+    padding: 10px;
+}
+
+th.helsinki{
+    background-color:hsl(20, 70%, 70%)
+}
+
+td.helsinki{
+    background-color:hsl(20, 60%, 90%)
+}
+
+th.espoo {
+    background-color:hsl(150, 70%, 70%)
+}
+
+td.espoo {
+    background-color:hsl(150, 60%, 90%)
+}
+
+th.vantaa {
+    background-color:hsl(200, 70%, 70%)
+}
+
+td.vantaa {
+    background-color:hsl(200, 60%, 90%)
+}
+
 /* Changement de la taille du commentaire dans les formulaires */
 form > p {
     font-size: 0.7em;
     font-style: italic;
+}
+
+main > aside > form > textarea {
+    min-width: 400px;
+    min-height: 50px;
+    max-width: 400px; 
+    max-height: 300px;
 }
 
 /* Configuration formulaire de la page demande */
