@@ -1,3 +1,5 @@
+/* Paramètres généraux */
+
 html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: rgb(255, 255, 255);
@@ -7,6 +9,49 @@ header {
     display: flex;
 	background-color: #DFDFDF;
 	align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main > article {
+    width: 70%;
+}
+
+main > aside {
+    width: 25%;
+}
+
+/* Changement de la taille du commentaire dans les formulaires */
+form > p {
+    font-size: 0.7em;
+    font-style: italic;
+}
+
+/* Configuration formulaire de la page demande */
+main > article > form {
+    font-size: 1.5em;
+}
+
+main > article > form > input {
+    height: 2em;
+    width: 15em;
+    margin-top: 1em;
+}
+
+main > article > form > textarea {
+    height: 5em;
+    width: 35em;
+}
+
+/* Configuration des pages avec un seul objet (1 colonne et non 2) */
+.simple {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 /* sticky footer */
@@ -21,12 +66,12 @@ body {
     flex-direction: column;
 }
 
-.content {
+main {
     flex: 1 0 auto;
     
 }
   
-.footer {
+footer {
     flex-shrink: 0;
 }
 
@@ -34,7 +79,7 @@ body {
 
 
 /* responsive */
-header >img {
+header > img {
     width: 10%;
     object-fit: cover;
     object-position: bottom;
@@ -50,7 +95,7 @@ header > h1 {
     header > h1 {
         font-size: 100%;
     }
-    header >img {
+    header > img {
         width: 20%;
     }
 }

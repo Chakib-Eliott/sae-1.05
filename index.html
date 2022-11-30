@@ -19,21 +19,63 @@
         <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
-<div class="content">
 
+<h1>Accueil</h1>
 <main>
-
-    <h1>Accueil</h1>
     <article>
-        ...
+        <div class="presentation">
+            <h2>Présentation</h2>
+            <p>
+                La <b>Direction Internationale de l'UVSQ</b> est une filière de l'UVSQ (Université de Versailles Saint-Quentin-en-Yvelines)
+                qui s'occupe des voyages et des échanges des différents sites de l'UVSQ avec le monde.
+            </p>
+        </div>
+        <div class="ancien-voyage">
+            <h2>Article sur les anciens voyages</h2>
+            <p>...</p>
+        </div>
     </article>
     <aside>
-
+        <h2>Faire une demande</h2>
+        <form action="succes.html" name="demande" method="post">
+            <label for="campus">Campus : *</label>
+            <select required="True" id="campus">
+                <optgroup label="Versailles">
+                    <option>UFR des sciences</option>
+                </optgroup>
+                <optgroup label="Saint-Quentin-en-Yvelines">
+                    <option>UFR des sciences sociales</option>
+                    <option>Institut supérieur de management</option>
+                    <option>Institut d'études culturelles et Internationale</option>
+                    <option>Faculté de droit et de science politique</option>
+                    <option>UFR Santé</option>
+                </optgroup>
+                <optgroup label="Vélizy-Villacoublay">
+                    <option>IUT de Vélizy-Rambouillet</option>
+                    <option>ISTY</option>
+                </optgroup>
+                <optgroup label="Rambouillet">
+                    <option>Antenne de l'IUT de Vélizy-Rambouillet</option>
+                </optgroup>
+                <optgroup label="Mantes">
+                    <option>IUT de Mantes en Yvelines</option>
+                    <option>ISTY</option>
+                </optgroup>
+            </select><br>
+            <label for="promo">Pomotion : *</label>
+            <input required="True" id="promo" name="promo" type="text" placeholder="ex: BUT 1 Info"><br>
+            <label for="contact">E-Mail de contact : *</label>
+            <input required="True" id="contact" name="email" type="email" placeholder="prenom.nom@uvsq.fr"><br>
+            <label for="ajout">Informations utiles :</label><br>
+            <textarea id="ajout" name="information"></textarea>
+            <p>Les champs avec '<abbr>*</abbr>' doivent être obligatoirement complétés.</p>
+            <input type="reset" name ="reset" value ="Annuler">
+            <input type ="submit" name ="ok" value ="Envoyer">
+        </form>
     </aside>
 </main>
 
-</div>
-<footer class="footer">
+<footer>
 	<p class='left'>&copy UVSQ</p>
 	<p class='right'><a href="https://www.uvsq.fr/" target="_BLANK">Site UVSQ</a> | <a href="contact.html" target="_BLANK">Contact</a></p>
 </footer>
