@@ -18,15 +18,15 @@ main {
 }
 
 main > article {
-    width: 70%;
+    width: 65%;
 }
 
 main > aside {
-    width: 25%;
+    width: 30%;
 }
 
 /*Tableau calendrier*/
-main > article > table {
+.simple > table {
     border-collapse: collapse;
 }
 
@@ -94,6 +94,28 @@ main > article > form > textarea {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+
+/* Lien dans demande */
+main > article > ul > a > li {
+    background-color: #ececec;
+    max-inline-size: 35em;
+	padding: 0.5em;
+    border-radius: 0.5em;
+    list-style: none;
+    margin: 2px;
+    white-space: nowrap;
+}
+
+main > article > ul > a  {
+    text-decoration: none;
+    color: black;
+}
+
+main > article > ul > a > li:hover {
+    background-color: rgb(105,4,59);
+    font-weight: bold;
+    color: white;
 }
 
 /* sticky footer */

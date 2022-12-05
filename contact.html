@@ -19,8 +19,58 @@
 	</ul>
 </nav>
 
-<main>
+<main class="simple">
 	<h1>Contact</h1>
+	<p>
+		Si vous avez besoin de nous contacter n'hésitez pas à remplir ce formulaire.<br>Si la raison est pour une
+		demande de voyage, rendez-vous sur la page suivante : <a href="demandes.html">ici</a>
+	</p>
+	<form action="envoye.html" name="contact" method="post">
+		<label for="campus">Campus : *</label>
+		<select required="True" id="campus">
+			<optgroup label="Versailles">
+				<option>UFR des sciences</option>
+			</optgroup>
+			<optgroup label="Saint-Quentin-en-Yvelines">
+				<option>UFR des sciences sociales</option>
+				<option>Institut supérieur de management</option>
+				<option>Institut d'études culturelles et Internationale</option>
+				<option>Faculté de droit et de science politique</option>
+				<option>UFR Santé</option>
+			</optgroup>
+			<optgroup label="Vélizy-Villacoublay">
+				<option>IUT de Vélizy-Rambouillet</option>
+				<option>ISTY</option>
+			</optgroup>
+			<optgroup label="Rambouillet">
+				<option>Antenne de l'IUT de Vélizy-Rambouillet</option>
+			</optgroup>
+			<optgroup label="Mantes">
+				<option>IUT de Mantes en Yvelines</option>
+				<option>ISTY</option>
+			</optgroup>
+		</select><br>
+		<label for="nom">Nom et Prénom : *</label>
+		<input required="True" id="nom" name="nom" type="text" placeholder="Prénom Nom"><br>
+		<label for="raison">Raison : *</label>
+		<input required="True" id="raison" name="raison" type="text" placeholder="ex: Renseignement sur le fonctionnement"><br>
+		<label for="contact">E-Mail de contact : *</label>
+		<input required="True" id="contact" name="email" type="email" placeholder="prenom.nom@uvsq.fr"><br>
+		<label for="message">Message : *</label><br>
+		<textarea required="True" id="message" name="message"></textarea>
+		<p>Les champs avec '<abbr>*</abbr>' doivent être obligatoirement complétés.</p>
+		<input type="reset" name ="reset" value ="Annuler">
+		<input type ="submit" name ="ok" value ="Envoyer">
+	</form>
+	<p>
+		Une fois le formulaire validé, le service de la Direction Internationale de l'UVSQ vous contactera sur l'e-mail entré et une
+		discussion sera donc lancé.
+	</p>
+	<br>
+	<p>
+		Vous pouvez sinon nous contacter à l'adresse mail suivant :<br><blockquote>direction.internationale@uvsq.fr</blockquote>
+		<br> ou au numéro de téléphone suivant :<br><blockquote>01 70 42 94 89</blockquote>
+	</p>
 </main>
 
 <footer>
