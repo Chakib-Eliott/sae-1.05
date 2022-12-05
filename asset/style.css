@@ -89,6 +89,7 @@ main > article > form > textarea {
     width: 35em;
 }
 
+
 /* Configuration des pages avec un seul objet (1 colonne et non 2) */
 .simple {
     display: flex;
