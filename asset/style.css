@@ -17,7 +17,7 @@ main {
     justify-content: space-between;
 }
 
-hr {
+hr, .separation  {
     margin-top: 2em;
     margin-bottom: 2em;
 }
@@ -30,13 +30,48 @@ main > aside {
     width: 30%;
 }
 
+
+/* page de proposition */
+.simple > h2 {
+    border: black solid 2px;
+}
+
+.simple > p > a {
+    color: black;
+}
+
+.gras_souligne {
+    text-decoration: underline;
+}
+
+.align-droite {
+    text-align: right;
+}
+
+.grise {
+    background-color: lightgray;
+}
+
+.vide {
+    border: none;
+}
+
+/* rappel dans les propositions*/
+.rappel {
+    column-count: 2;
+}
+
+.rappel > b {
+    text-decoration: underline;
+}
+
 /*Tableau calendrier*/
 .simple > table {
     border-collapse: collapse;
 }
 
-
 td, th{
+    width: 1em;
     border: solid 1px black;
     padding: 10px;
 }
@@ -203,6 +238,7 @@ footer {
 	background-color: #DFDFDF;
 	justify-content: space-between;
     padding: 5px;
+    margin-top: 1em;
 }
 
 footer > p > a {
