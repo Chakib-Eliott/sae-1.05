@@ -17,6 +17,11 @@ main {
     justify-content: space-between;
 }
 
+hr {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
 main > article {
     width: 65%;
 }
@@ -101,7 +106,7 @@ main > article > form > textarea {
 main > article > ul > a > li {
     background-color: #ececec;
     max-inline-size: 35em;
-	padding: 0.5em;
+	padding: 1em;
     border-radius: 0.5em;
     list-style: none;
     margin: 2px;
@@ -112,6 +117,14 @@ main > article > ul > a  {
     text-decoration: none;
     color: black;
 }
+
+main > article > ul > a > li > h2 {
+    font-size: 1.5vmax;
+}
+
+main > article > ul > a > li > p {
+    font-size: 0.90vmax;
+} 
 
 main > article > ul > a > li:hover {
     background-color: rgb(105,4,59);
