@@ -27,7 +27,7 @@
 	</p>
 	<form action="envoye.html" name="contact" method="post">
 		<label for="campus">Campus : *</label>
-		<select required="True" id="campus">
+		<select required="required" id="campus">
 			<optgroup label="Versailles">
 				<option>UFR des sciences</option>
 			</optgroup>
@@ -51,13 +51,13 @@
 			</optgroup>
 		</select><br>
 		<label for="nom">Nom et Prénom : *</label>
-		<input required="True" id="nom" name="nom" type="text" placeholder="Prénom Nom"><br>
+		<input required="required" id="nom" name="nom" type="text" placeholder="Prénom Nom"><br>
 		<label for="raison">Raison : *</label>
-		<input required="True" id="raison" name="raison" type="text" placeholder="ex: Renseignement sur le fonctionnement"><br>
+		<input required="required" id="raison" name="raison" type="text" placeholder="ex: Renseignement"><br>
 		<label for="contact">E-Mail de contact : *</label>
-		<input required="True" id="contact" name="email" type="email" placeholder="prenom.nom@uvsq.fr"><br>
+		<input required="required" id="contact" name="email" type="email" placeholder="prenom.nom@uvsq.fr"><br>
 		<label for="message">Message : *</label><br>
-		<textarea required="True" id="message" name="message"></textarea>
+		<textarea required="required" id="message" name="message"></textarea>
 		<p>Les champs avec '<abbr>*</abbr>' doivent être obligatoirement complétés.</p>
 		<input type="reset" name ="reset" value ="Annuler">
 		<input type ="submit" name ="ok" value ="Envoyer">
@@ -67,10 +67,8 @@
 		discussion sera donc lancé.
 	</p>
 	<br>
-	<p>
-		Vous pouvez sinon nous contacter à l'adresse mail suivant :<br><blockquote>direction.internationale@uvsq.fr</blockquote>
-		<br> ou au numéro de téléphone suivant :<br><blockquote>01 70 42 94 89</blockquote>
-	</p>
+	<p>Vous pouvez sinon nous contacter à l'adresse mail suivant :</p><blockquote>direction.internationale@uvsq.fr</blockquote>
+	<p><br> ou au numéro de téléphone suivant :</p><blockquote>01 70 42 94 89</blockquote>
 </main>
 
 <footer>

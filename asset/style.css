@@ -94,6 +94,21 @@ main > article > form > textarea {
     width: 35em;
 }
 
+/* Configuration formulaire de la page contact */
+.simple > form {
+    font-size: 1em;
+}
+
+.simple > form > input {
+    height: 2em;
+    width: 15em;
+    margin-top: 1em;
+}
+
+.simple > form > textarea {
+    height: 5em;
+    width: 35em;
+}
 
 /* Configuration des pages avec un seul objet (1 colonne et non 2) */
 .simple {
@@ -102,31 +117,31 @@ main > article > form > textarea {
     justify-content: flex-start;
 }
 
-/* Lien dans demande */
-main > article > ul > a > li {
+/* Lien dans proposition */
+.boutton {
     background-color: #ececec;
     max-inline-size: 35em;
 	padding: 1em;
     border-radius: 0.5em;
-    list-style: none;
     margin: 2px;
     white-space: nowrap;
+    display: block;
 }
 
-main > article > ul > a  {
+main > article > a  {
     text-decoration: none;
     color: black;
 }
 
-main > article > ul > a > li > h2 {
+main > article > a > h2 {
     font-size: 1.5vmax;
 }
 
-main > article > ul > a > li > p {
+main > article > a > p {
     font-size: 0.90vmax;
 } 
 
-main > article > ul > a > li:hover {
+main > article > a:hover {
     background-color: rgb(105,4,59);
     font-weight: bold;
     color: white;
@@ -162,7 +177,7 @@ header > img {
     object-fit: cover;
     object-position: bottom;
     margin: 1em;
-    max-height: auto;
+    max-height: 100%;
 }
 
 header > h1 {

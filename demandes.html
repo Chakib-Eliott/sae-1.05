@@ -26,7 +26,7 @@
         <h2>Formulaire :</h2>
 		<form action="succes.html" name="demande" method="post">
             <label for="campus">Campus : *</label>
-            <select required="True" id="campus">
+            <select required="required" id="campus">
                 <optgroup label="Versailles">
                     <option>UFR des sciences</option>
                 </optgroup>
@@ -50,9 +50,9 @@
                 </optgroup>
             </select><br>
             <label for="promo">Pomotion : *</label>
-            <input required="True" id="promo" name="promo" type="text" placeholder="ex: BUT 1 Info"><br>
+            <input required="required" id="promo" name="promo" type="text" placeholder="ex: BUT 1 Info"><br>
             <label for="contact">E-Mail de contact : *</label>
-            <input required="True" id="contact" name="email" type="email" placeholder="prenom.nom@uvsq.fr"><br>
+            <input required="required" id="contact" name="email" type="email" placeholder="prenom.nom@uvsq.fr"><br>
             <label for="ajout">Informations utiles :</label><br>
             <textarea id="ajout" name="information"></textarea>
             <p>Les champs avec '<abbr>*</abbr>' doivent être obligatoirement complétés.</p>
@@ -67,8 +67,8 @@
     <aside>
         <h2>Contact</h2>
         <form action="envoye.html" name="contact" method="post">
-            <label for="campus">Campus : *</label>
-            <select required="True" id="campus">
+            <label for="campus2">Campus : *</label>
+            <select required="required" id="campus2">
                 <optgroup label="Versailles">
                     <option>UFR des sciences</option>
                 </optgroup>
@@ -92,13 +92,13 @@
                 </optgroup>
             </select><br>
             <label for="nom">Nom et Prénom : *</label>
-            <input required="True" id="nom" name="nom" type="text" placeholder="Prénom Nom"><br>
+            <input required="required" id="nom" name="nom" type="text" placeholder="Prénom Nom"><br>
             <label for="raison">Raison : *</label>
-            <input required="True" id="raison" name="raison" type="text" placeholder="ex: Renseignement sur le fonctionnement"><br>
-            <label for="contact">E-Mail de contact : *</label>
-            <input required="True" id="contact" name="email" type="email" placeholder="prenom.nom@uvsq.fr"><br>
+            <input required="required" id="raison" name="raison" type="text" placeholder="ex: Renseignement"><br>
+            <label for="contact2">E-Mail de contact : *</label>
+            <input required="required" id="contact2" name="email" type="email" placeholder="prenom.nom@uvsq.fr"><br>
             <label for="message">Message : *</label><br>
-            <textarea required="True" id="message" name="message"></textarea>
+            <textarea required="required" id="message" name="message"></textarea>
             <p>Les champs avec '<abbr>*</abbr>' doivent être obligatoirement complétés.</p>
             <input type="reset" name ="reset" value ="Annuler">
             <input type ="submit" name ="ok" value ="Envoyer">
@@ -108,10 +108,8 @@
             discussion sera donc lancé.
         </p>
         <br>
-        <p>
-            Vous pouvez sinon nous contacter à l'adresse mail suivant :<br><blockquote>direction.internationale@uvsq.fr</blockquote>
-            <br> ou au numéro de téléphone suivant :<br><blockquote>01 70 42 94 89</blockquote>
-        </p>
+        <p>Vous pouvez sinon nous contacter à l'adresse mail suivant :</p><blockquote>direction.internationale@uvsq.fr</blockquote>
+        <p><br> ou au numéro de téléphone suivant :</p><blockquote>01 70 42 94 89</blockquote>
     </aside>
 </main>
 

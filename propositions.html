@@ -22,36 +22,60 @@
 <h1>Nos propositions</h1>
 <main>
     <article>
-        <ul>
-            <a href="propositions/iut_velizy_avril_2023.html">
-                <li>
-                    <h2>IUT de Vélizy - Avril 2024</h2>
-                    <p>Proposition de voyage pour l'IUT de Vélizy en Avril 2024.</p>
-                </li>
-            </a>
-            <a href="propositions/ufr_sqy_septembre_2022.html">
-                <li>
-                    <h2>UFR de Saint-Quentin-en-Yvelines - Septembre 2022</h2>
-                    <p>Proposition de voyage pour l'UFR de Saint-Quentin-en-Yvelines en Septembre 2022.</p>
-                </li>
-            </a>
-            <a href="propositions/ufr_versailles_juin_2018.html">
-                <li>
-                    <h2>UFR de Versailles - Juin 2018</h2>
-                    <p>Proposition de voyage pour l'UFR de Versailles en Juin 2018.</p>
-                </li>
-            </a>
-            <a href="propositions/iut_mantes_mars_2017.html">
-                <li>
-                    <h2>IUT de Mantes en Yvelines - Mars 2017</h2>
-                    <p>Proposition de voyage pour l'IUT de Mantes en Yvelines en Mars 2017.</p>
-                </li>
-            </a>
-        </ul>
-		
+        <a class="boutton" href="propositions/iut_velizy_avril_2024.html">
+            <h2>IUT de Vélizy - Avril 2024</h2>
+            <p>Proposition de voyage pour l'IUT de Vélizy en Avril 2024.</p>
+        </a>
+        <a class="boutton" href="propositions/ufr_sqy_septembre_2022.html">
+            <h2>UFR de Saint-Quentin-en-Yvelines - Septembre 2022</h2>
+            <p>Proposition de voyage pour l'UFR de Saint-Quentin-en-Yvelines en Septembre 2022.</p>
+        </a>
+        <a class="boutton" href="propositions/ufr_versailles_juin_2018.html">
+            <h2>UFR de Versailles - Juin 2018</h2>
+            <p>Proposition de voyage pour l'UFR de Versailles en Juin 2018.</p>
+        </a>
+        <a class="boutton" href="propositions/iut_mantes_mars_2017.html">
+            <h2>IUT de Mantes en Yvelines - Mars 2017</h2>
+            <p>Proposition de voyage pour l'IUT de Mantes en Yvelines en Mars 2017.</p>
+        </a>
     </article>
     <aside>
-
+        <h2>Faire une demande</h2>
+        <form action="succes.html" name="demande" method="post">
+            <label for="campus">Campus : *</label>
+            <select required="required" id="campus">
+                <optgroup label="Versailles">
+                    <option>UFR des sciences</option>
+                </optgroup>
+                <optgroup label="Saint-Quentin-en-Yvelines">
+                    <option>UFR des sciences sociales</option>
+                    <option>Institut supérieur de management</option>
+                    <option>Institut d'études culturelles et Internationale</option>
+                    <option>Faculté de droit et de science politique</option>
+                    <option>UFR Santé</option>
+                </optgroup>
+                <optgroup label="Vélizy-Villacoublay">
+                    <option>IUT de Vélizy-Rambouillet</option>
+                    <option>ISTY</option>
+                </optgroup>
+                <optgroup label="Rambouillet">
+                    <option>Antenne de l'IUT de Vélizy-Rambouillet</option>
+                </optgroup>
+                <optgroup label="Mantes">
+                    <option>IUT de Mantes en Yvelines</option>
+                    <option>ISTY</option>
+                </optgroup>
+            </select><br>
+            <label for="promo">Pomotion : *</label>
+            <input required="required" id="promo" name="promo" type="text" placeholder="ex: BUT 1 Info"><br>
+            <label for="contact">E-Mail de contact : *</label>
+            <input required="required" id="contact" name="email" type="email" placeholder="prenom.nom@uvsq.fr"><br>
+            <label for="ajout">Informations utiles :</label><br>
+            <textarea id="ajout" name="information"></textarea>
+            <p>Les champs avec '<abbr>*</abbr>' doivent être obligatoirement complétés.</p>
+            <input type="reset" name ="reset" value ="Annuler">
+            <input type ="submit" name ="ok" value ="Envoyer">
+        </form>
     </aside>
 </main>
 
