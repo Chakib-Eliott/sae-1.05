@@ -30,6 +30,14 @@ main > aside {
     width: 30%;
 }
 
+/* Article index.html */
+.descr {
+    column-count: 2;
+}
+
+.alinea {
+    text-indent: 20px;
+}
 
 /* page de proposition */
 .simple > h2 {
